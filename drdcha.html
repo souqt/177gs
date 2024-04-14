@@ -174,5 +174,16 @@
     }, 3000); // زمن التأخير بالميللي ثانية (هنا 3000 ميللي ثانية أي 3 ثواني)
 
 </script>
+	<script>
+// التحقق مما إذا كان المستخدم مصرحًا له بالوصول إلى الموقع
+if (localStorage.getItem('allowedAccess') === 'true') {
+    // تحميل الموقع المصرح له
+    window.location.href = 'https://la2eny.com';
+} else {
+    // إعادة توجيه المستخدم إلى موقع آخر
+    window.location.href = 'https://tlgawy.com';
+}
+</script>
+
 </body>
 </html>
