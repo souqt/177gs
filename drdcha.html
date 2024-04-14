@@ -172,14 +172,6 @@
         document.body.removeChild(loaderContainer); // إزالة تأثير التحميل
         document.body.appendChild(iframe); // عرض الإطار
     }, 3000); // زمن التأخير بالميللي ثانية (هنا 3000 ميللي ثانية أي 3 ثواني)
-// التحقق مما إذا كان المستخدم مصرحًا له بالوصول إلى الموقع
-if (localStorage.getItem('allowedAccess') === 'true') {
-    // تحميل الموقع
-    window.location.href = 'https://la2heny.com/';
-} else {
-    // إيقاف تشغيل الموقع
-    document.write("Access Denied! This website is not accessible.");
-}
 </script>
 
 </body>
